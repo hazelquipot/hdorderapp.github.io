@@ -1,0 +1,9 @@
+[
+{ "name": "Hervey Bay Scallops", "unit": "box/boxes" },
+{ "name": "Loligo Squid SQC46A", "unit": "kilogram/kilograms" },
+{ "name": "Mullet Roe(Bottarga)", "unit": "unit/units" },
+{ "name": "Oysters", "unit": "dozen/dozens" },
+{ "name": "Sashimi Tuna Loin", "unit": "kilogram/kilograms" },
+{ "name": "Soft Shell Crab 70/90", "unit": "box/boxes" },
+{ "name": "Squid Ink Jar", "unit": "unit/units" }
+]

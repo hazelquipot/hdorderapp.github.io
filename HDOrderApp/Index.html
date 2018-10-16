@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+    <div id="createListDiv">
+        <h1>Xico's Order System</h1>
+
+        <div class="dropdown">
+            <button style="width:200px" onclick="myFunction();" class="dropbtn"><i class="fa fa-shopping-cart"></i> Select Supplier <span class="fa fa-caret-down"></span></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#" onclick="createOrderList('Bread Top');">Bread Top</a>
+                <span class="empty">&nbsp;</span>
+                <a href="#" onclick="createOrderList('Joto');">Joto</a>
+                <span class="empty">&nbsp;</span>
+                <a href="#" onclick="createOrderList('Jun Pacific');">Jun Pacific</a>
+                <span class="empty">&nbsp;</span>
+                <a href="#" onclick="createOrderList('Northside');">Northside</a>
+                <span class="empty">&nbsp;</span>
+                <a href="#" onclick="createOrderList('Simon Johnson');">Simon Johnson</a>
+                <span class="empty">&nbsp;</span>
+                <a href="#" onclick="createOrderList('Waterside');">Waterside</a>
+                <span class="empty">&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="shoppingListDiv" style="display:none;">
+        <h1 id="shoppingListTitle">Supplier 1</h1>
+
+        <div class="row">
+            Supplier email: <input id="supplierEmail" type="text" placeholder="supplier's email address'" />
+        </div>
+
+        <input id="newItemName" type="text" placeholder="Add item not in the list" />
+        <a href="#" class="button button-blue" style="padding: 1px 23px 1px;" onclick="addNewItem();">
+            <i class="fa fa-list-ul"></i>
+            <strong>Add</strong>
+        </a>
+
+        <ul id="shoppingListItems">
+        </ul>
+        
+        <a href="#" class="button button-green" onclick="submitOrder();">
+            <i class="fa fa-check"></i>
+            Submit <strong>order</strong>
+        </a>
+    </div>
+</body>
+</html>
